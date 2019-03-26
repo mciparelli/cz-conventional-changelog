@@ -1,5 +1,5 @@
 {
-  "name": "cz-conventional-changelog",
+  "name": "@mciparelli/cz-conventional-changelog",
   "version": "0.1.0",
   "description": "Commitizen adapter following the conventional-changelog format.",
   "main": "index.js",
