@@ -66,19 +66,11 @@ module.exports = function(options) {
           default: options.defaultBody
         },
         {
-          type: "confirm",
-          name: "isIssueAffected",
-          message: "Does this change affect any open issues?",
-          default: options.defaultIssues ? true : false
-        },
-        {
           type: "input",
           name: "issues",
-          message: 'Add issue references (e.g. "#123".):\n',
-          when: function(answers) {
-            return answers.isIssueAffected;
-          },
-          default: options.defaultIssues ? options.defaultIssues : undefined
+          message:
+            'Add issue references (e.g. "#123".): (press enter to skip)\n',
+          default: options.defaultIssues
         }
       ]).then(function(answers) {
         var maxLineWidth = 100;
