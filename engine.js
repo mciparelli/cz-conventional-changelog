@@ -53,12 +53,6 @@ module.exports = function(options) {
         },
         {
           type: "input",
-          name: "scope",
-          message: "What is the task number?\n",
-          default: options.defaultScope
-        },
-        {
-          type: "input",
           name: "subject",
           message:
             "Write a short, imperative tense description of the change:\n",
